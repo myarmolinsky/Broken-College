@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Report</title>
+	<!-- boostrap css -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="report.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+			<label for="location">Choose a location</label>
+			<span class="text-danger">*</span>
+			</div>
+			<div class="col-md-9">
+				<select id="location">
+					<option value="Ingersoll Hall">Ingersoll Hall</option>
+					<option value="boylan">Boylan</option>
+					<option value="west quart"> west qart</option>
+				</select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 form-group">
+				 <label for="exampleFormControlTextarea1">Problems:</label>
+				 <span class="text-danger">*</span>
+			</div>
+			<div class="col-md-8">
+   		 		<textarea class="form-control" id="exampleFormControlTextarea1" rows="5">
+   		 			
+   		 		</textarea>
+
+				
+			</div>
+		</div>
+		<div class="row">
+			<form class="col-md-12">
+				<div class="form-group">
+					<label for="exampleFormControlFile1">Select a file</label>
+					<span class="text-danger">*</span>
+					<input type="file" class="form-control-file" id="exampleFormControlFile1" multiple>
+				</div>
+			</form>
+				
+			</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+
+		</div>
+	</div>
+</body>
+</html>
