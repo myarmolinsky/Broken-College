@@ -99,3 +99,18 @@ body {
     opacity: 1;
   }
 }
+
+table{
+  display:table;
+  border-color: gray;
+  border-spacing: 100px;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+td{
+  width: 120px;
+}
