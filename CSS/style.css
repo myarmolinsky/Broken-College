@@ -101,13 +101,17 @@ body {
 }
 
 table{
+  width:1200px;
+  height: 300px;
   display:table;
+  position:fixed;
   border-color: gray;
   border-spacing: 3cm 1em;
   border-collapse: collapse;
+  left:15%;
 }
 
-table, th, td {
+table,th, td {
   border: 1px solid black;
 }
 
