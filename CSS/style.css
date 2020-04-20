@@ -27,15 +27,6 @@ body {
 
 }
 
-.loginListItem {
-  position: relative;
-  margin: auto;
-  max-width: 200px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 80%;
-}
-
 .prev,
 .next {
   cursor: pointer;
