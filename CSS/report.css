@@ -1,0 +1,38 @@
+.row {
+  margin-bottom: 20px;
+}
+body {
+  /*font-size:30px;*/
+  background-color: floralwhite;
+}
+.btn-secondary {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.col-md-3 {
+  text-align: left;
+}
+.col-md-12 {
+  width: 100%;
+  height: 300px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+label {
+  font-size: 20px;
+}
+#location {
+  height: 40px;
+  border-radius: 5px;
+}
+.float-right{
+  padding-right:2%;
+}

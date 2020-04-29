@@ -2,6 +2,19 @@ body {
   background-color: antiquewhite;
 }
 
+.headerTitle {
+  background-color: #730d0d;
+  color: white;
+  border-style: dotted;
+  padding-left: 16px;
+  font-family: candara, verdana, arial;
+  font-style: italic;
+}
+
+.headerMotto {
+  padding-left: 16px;
+}
+
 .navbarList {
   list-style-type: none;
   margin: 0;
@@ -10,6 +23,8 @@ body {
 
 .navbarListItem {
   display: inline;
+  padding-left: 2%;
+
 }
 
 .prev,
@@ -100,22 +115,27 @@ body {
   }
 }
 
-table{
-  width:1200px;
-  height: 300px;
-  display:table;
-  position:fixed;
-  border-color: gray;
-  border-spacing: 3cm 1em;
-  border-collapse: collapse;
-  left:15%;
+.navButtons {
+  position: relative;
+  background-color: wheat;
+  border-style: solid;
+  margin-top: 32px;
+
 }
 
-table,th, td {
-  border: 1px solid black;
+.reportButton {
+  max-width: 210px;
+  position: relative;
+  margin: auto;
+  padding-top: 16px;
+  padding-left: 72px;
 }
 
-td{
-  width: 180px;
+.viewButton {
+  max-width: 350px;
+  position: relative;
+  margin: auto;
+  padding-top: 16px;
+  padding-left: 76px;
+  padding-bottom: 16px;
 }
-
