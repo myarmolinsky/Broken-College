@@ -1,59 +1,75 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Broken College</title>
+    <script src="../JS/script.js"></script>
+    <script src="../JS/posts.js"></script>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <!-- boostrap css -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- css -->
+  </head>
 
-<head>
-  <title>Broken College</title>
-  <script src="../JS/script.js"></script>
-  <link rel="stylesheet" href="../CSS/style.css"/>
-</head>
-
-<body>
-
-
-<!--TITLE HEADER [Begin]-->
-  <div class="headerTitle">
-    <h1> 
-      <a href="index.html" style="text-decoration: none;
-				  color: white;
-			         "
-        > Broken College
-      </a> 
-    </h1>
-  </div>
-<!--TITLE HEADER [End]-->
-
-
-<!--MOTTO HEADER [Begin]-->
-  <div class="headerMotto">
-    <h4 style="font-weight: bold;
-	      "
-      > Help repair your campus! 
-    </h4>
-  </div>
-<!--MOTTO HEADER [End]-->
-
-
-<!--FEATURE #1: Navbar [Begin]-->
-  <ul class="navbarList">
-    <li class="navbarListItem"><a href="postsBoard.html">View: Posted Issues</a></li>
-    <li class="navbarListItem"><a href="report.html">Report: an Issue</a></li>
-    <li class="navbarListItem"><a href="contact.html">Contact: Website Admins</a></li>
-    <div class="loginListItem">
-      <li class="navbarListItem">
-        <a href="login.html">Sign-in</a> or 
-        <a href="makeAcc.html">Create Account</a>
-      </li>
+  <body onload="loadPosts()">
+    <!--TITLE HEADER [Begin]-->
+    <div class="headerTitle">
+      <h1>
+        <a href="index.html" style="text-decoration: none; color: white;">
+          Broken College
+        </a>
+      </h1>
     </div>
-  </ul>
-  <hr />
-<!--FEATURE #1: Navbar [End]-->
+    <!--TITLE HEADER [End]-->
 
+    <!--MOTTO HEADER [Begin]-->
+    <div class="headerMotto">
+      <h4 style="font-weight: bold;">Help repair your campus!</h4>
+    </div>
+    <!--MOTTO HEADER [End]-->
 
-<!--PAGE TITLE: Posts Board [Begin]-->
-  <h2>Posts Board</h2>
-<!--PAGE TITLE: Posts Board [End]-->
+    <!--FEATURE #1: Navbar [Begin]-->
+    <ul class="navbarList">
+      <li class="navbarListItem">
+        <a href="postsBoard.html">View: Posted Issues</a>
+      </li>
+      <li class="navbarListItem"><a href="report.html">Report: an Issue</a></li>
+      <li class="navbarListItem">
+        <a href="contact.html">Contact: Website Admins</a>
+      </li>
+      <li class="navbarListItem">
+        <a href="login.html">Login/Register</a>
+      </li>
+    </ul>
+    <hr />
+    <!--FEATURE #1: Navbar [End]-->
 
-
-</body>
-
+    <!--PAGE TITLE: Posts Board [Begin]-->
+    <a
+      href="../HTML/index.html"
+      class="btn btn-secondary"
+      style="margin-left: 1%;"
+      >Back</a
+    >
+    <div class="container" id="container">
+      <div class="card">
+        <div class="card-header">
+          <h2
+            style="
+              text-decoration: underline;
+              text-align: center;
+              margin-top: 1%;
+            "
+          >
+            Posts Board
+          </h2>
+        </div>
+      </div>
+    </div>
+    <!--PAGE TITLE: Posts Board [End]-->
+  </body>
 </html>
