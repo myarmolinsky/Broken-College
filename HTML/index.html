@@ -1,43 +1,152 @@
 <!DOCTYPE html>
-<title>Broken College</title>
-<script src="../JavaScript/script.js"></script>
-<link rel="stylesheet" href="../CSS/style.css" />
-<body>
-  <ul class="navbarList">
-    <li class="navbarListItem"><a href="reports.html">Issues</a></li>
-    <li class="navbarListItem"><a href="report.html">Report an Issue</a></li>
-    <li class="navbarListItem"><a href="contact.html">Contact</a></li>
-  </ul>
-  <hr />
-  <div class="slideshow">
-    <div class="slide fade">
-      <textarea></textarea>
-      <div class="caption">[report_1]</div>
-    </div>
-    <div class="slide fade">
-      <textarea></textarea>
-      <div class="caption">[report_2]</div>
-    </div>
-    <div class="slide fade">
-      <textarea></textarea>
-      <div class="caption">[report_3]</div>
-    </div>
-    <div class="slide fade">
-      <textarea></textarea>
-      <div class="caption">[report_4]</div>
-    </div>
-    <div class="slide fade">
-      <textarea></textarea>
-      <div class="caption">[report_5]</div>
-    </div>
-    <a class="prev" onclick="shiftSlide(-1)">&#10094;</a>
-    <a class="next" onclick="shiftSlide(1)">&#10095;</a>
+<html>
+  <head>
+    <title>Broken College</title>
+
+
+    <!-- boostrap css -->
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+    />
+    <!-- css -->
+      <link rel="stylesheet" type="text/css" href="../CSS/style.css" />
+  </head>
+
+<body style="  width:100%;background-color: floralwhite;font-family: candara, verdana, arial;">
+  <!--TITLE HEADER [Begin]-->
+  <div class="headerTitle">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="../HTML/index.html">BrokenCollege</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a href="postsBoard.html">Posts</a>
+          </li>
+          <li class="nav-item">
+            <a href="report.html">Report</a>
+          </li>
+          <li class="nav-item">
+            <a href="login.html">Login/Register</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </div>
-  <div style="text-align:center">
-    <span class="dot" onclick="changeSlide(1)"></span>
-    <span class="dot" onclick="changeSlide(2)"></span>
-    <span class="dot" onclick="changeSlide(3)"></span>
-    <span class="dot" onclick="changeSlide(4)"></span>
-    <span class="dot" onclick="changeSlide(5)"></span>
-  </div>
+  <!--TITLE HEADER [End]-->
+
+  <div class = "container">
+    <!--MOTTO HEADER [Begin]-->
+    <div class="headerMotto">
+      <h4 style="font-weight: bold;"> 
+        Help repair your campus! 
+      </h4>
+    </div>
+  <!--MOTTO HEADER [End]-->
+
+  <!--FEATURE #2: Slideshow [Begin]-->
+    <h2 style="text-align: center;">HERE ARE SOME ISSUES RESOLVED THANKS TO OUR COMMUNITY:</h2>
+    <div class="slideshow">
+      <!--Division for: Slideshow - Item 1 [Begin]-->
+      <div class="slideshow">
+        <div class="slide fade">
+          <img style="width:100%; height:500px" src="../Resources/repairedWall.jpg"/>
+        </div>
+        <!--Division for: Slideshow - Item 1 [End]-->
+        <!--Division for: Slideshow - Item 2 [Begin]-->
+        <div class="slide fade">
+          <img style="width:100%; height:500px" src="../Resources/repairedDoor.jpg"/>
+        </div>
+        <!--Division for: Slideshow - Item 2 [End]-->
+        <!--Division for: Slideshow - Item 3 [Begin]-->
+        <div class="slide fade">
+          <img style="width:100%; height:500px" src="../Resources/repairedCeiling.jpeg"/>
+        </div>
+        <!--Division for: Slideshow - Item 3 [End]-->
+        <!--Division for: Slideshow - Item 4 [Begin]-->
+        <div class="slide fade">
+          <img style="width:100%; height:500px" src="../Resources/repairedWindow.jpg"/>
+        </div>
+        <!--Division for: Slideshow - Item 4 [End]-->
+        <!--Division for: Slideshow - Item 5 [Begin]-->
+        <div class="slide fade">
+          <img style="width:100%; height:500px" src="../Resources/repairedSidewalk.jpg"/>
+        </div>
+        <!--Division for: Slideshow - Item 5 [End]-->
+        <!--Division for: Slideshow - Arrow Navigation Buttons [Begin]-->
+      <div>
+        <a class="prev" onclick="shiftSlide(-1)">&#10094;</a>
+        <a class="next" onclick="shiftSlide(1)">&#10095;</a>
+      </div>
+  <!--Division for: Slideshow - Arrow Navigation Buttons [End]-->
+
+  <!--Division for: Slideshow - Dot Navigation Buttons [Begin]-->
+      <div style="text-align:center">
+      <span class="dot" onclick="changeSlide(1)"></span>
+      <span class="dot" onclick="changeSlide(2)"></span>
+      <span class="dot" onclick="changeSlide(3)"></span>
+      <span class="dot" onclick="changeSlide(4)"></span>
+      <span class="dot" onclick="changeSlide(5)"></span>
+      </div>
+  <!--Division for: Slideshow - Dot Navigation Buttons [End]-->
+
+</div>
+<!--FEATURE #2: Slideshow [End]-->
+
+
+<!--FEATURE #3: Navigation Buttons [Begin]-->
+<div class="navButtons">
+  <!--FEATURE #3.1: REPORT_ISSUE Button [Begin]-->
+  <div class="reportButton">
+    <button style="background-color: #ff7a7a;
+    border-color: #fffc96;
+    border-top-width: 3px;
+    border-left-width: 3px;
+    border-bottom-width: 6px;
+    border-right-width: 6px;
+    font-family: verdana, arial;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    "
+    type="button"
+    >
+    <a href="report.html">REPORT</a>
+  </button>
+</div>
+<!--FEATURE #3.1: REPORT_ISSUE Button [End]-->
+
+<!--FEATURE #3.2: VIEW/COMMENT Button [Begin]-->
+<div class="viewButton">
+  <button style="background-color: white; 
+  border-color: lightblue;
+  border-top-width: 3px;
+  border-left-width: 3px;
+  border-bottom-width: 6px;
+  border-right-width: 6px;
+  font-family: verdana, arial;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  "
+  type="button"
+  >
+  <!--NOTE #1: Remember to change the html file name to make link work.-->
+  <a href="postsBoard.html">VIEW / COMMENT</a>
+  <!--NOTE #1: End of comment.-->
+</button>
+</div>
+<!--FEATURE #3.2: VIEW/COMMENT Button [End]-->
+</div>
+<!--FEATURE #3: Navigation Buttons [end]-->
+</div>
+<script src="../JS/script.js"></script> <!-- script must be inside body for the slideshow to load on pageload -->
 </body>
+</html>

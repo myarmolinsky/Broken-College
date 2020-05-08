@@ -10,6 +10,12 @@ body {
 	 width: 30rem;
 	 height:40rem
 }
+.card-header{
+	text-align: center;
+}
 .card-body{
 	text-align: center;
+}
+.col-sm-5{
+	text-align:right;
 }

@@ -1,5 +1,20 @@
 body {
-  background-color: antiquewhite;
+  width:100%;
+  background-color: floralwhite;
+  font-family: candara, verdana, arial;
+}
+
+.headerTitle {
+  background-color: #189fb1;
+  width:100%;
+  color: white;
+  padding-left: 16px;
+  font-family: candara, verdana, arial;
+
+}
+
+.headerMotto {
+  padding-left: 16px;
 }
 
 .navbarList {
@@ -7,9 +22,21 @@ body {
   margin: 0;
   padding: 0;
 }
-
-.navbarListItem {
-  display: inline;
+a.navbar-brand{
+  font-size:3em;
+  color:white;
+  margin-left:-1.5%;
+  margin-right:3%;
+}
+.nav-item {
+  margin-right: 15%;
+  font-size:1.5em;
+}
+.nav-item a{
+  color:white;
+}
+a:hover{
+  color:gray;
 }
 
 .prev,
@@ -23,7 +50,7 @@ body {
   color: white;
   font-weight: bold;
   font-size: 18px;
-  transition: 0.6s ease;
+  transition: 0.6s ease
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
@@ -46,17 +73,6 @@ body {
 
 .slide {
   display: none;
-}
-
-.caption {
-  color: black;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-  font-weight: bold;
 }
 
 .dot {
@@ -98,4 +114,29 @@ body {
   to {
     opacity: 1;
   }
+}
+
+.navButtons {
+  position: relative;
+  background-color: wheat;
+  border-style: solid;
+  margin-top: 32px;
+
+}
+
+.reportButton {
+  max-width: 210px;
+  position: relative;
+  margin: auto;
+  padding-top: 16px;
+  padding-left: 72px;
+}
+
+.viewButton {
+  max-width: 350px;
+  position: relative;
+  margin: auto;
+  padding-top: 16px;
+  padding-left: 76px;
+  padding-bottom: 16px;
 }

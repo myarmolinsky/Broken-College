@@ -11,14 +11,43 @@
     />
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="../CSS/report.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css" />
   </head>
   <body>
+    <!--TITLE HEADER [Begin]-->
+    <div class="headerTitle">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="../HTML/index.html">BrokenCollege</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a href="postsBoard.html">Posts</a>
+            </li>
+            <li class="nav-item">
+              <a href="report.html">Report</a>
+            </li>
+            <li class="nav-item">
+              <a href="login.html">Login/Register</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!--TITLE HEADER [End]-->
     <div class="container">
-      <a href="../HTML/index.html" class="btn btn-secondary">Back</a>
+      <a href="javascript:history.back()" class="btn btn-secondary">Back</a>
       <div class="card">
         <div class="card-header">
           <h2
-            style="text-decoration: underline; text-align: center; margin-top: 1%"
+            style="
+              text-decoration: underline;
+              text-align: center;
+              margin-top: 1%;
+            "
           >
             Report an Issue
           </h2>
@@ -27,7 +56,7 @@
           <form>
             <div class="row">
               <div class="col-md-3">
-                <label for="location">Location</label>
+                <label for="location">Location:</label>
                 <span class="text-danger">*</span>
               </div>
               <div class="col-md-5">
@@ -62,7 +91,7 @@
               </div>
             </div>
             <div class="row">
-              <div class=" col-md-12 form-group">
+              <div class="col-md-12 form-group">
                 <label for="exampleFormControlFile1">Select a file</label>
                 <span class="text-danger">*</span>
                 <input
