@@ -1,5 +1,20 @@
 body {
-  background-color: antiquewhite;
+  width:100%;
+  background-color: floralwhite;
+  font-family: candara, verdana, arial;
+}
+
+.headerTitle {
+  background-color: #189fb1;
+  width:100%;
+  color: white;
+  padding-left: 16px;
+  font-family: candara, verdana, arial;
+
+}
+
+.headerMotto {
+  padding-left: 16px;
 }
 
 .headerTitle {
@@ -20,11 +35,21 @@ body {
   margin: 0;
   padding: 0;
 }
-
-.navbarListItem {
-  display: inline;
-  padding-left: 2%;
-
+a.navbar-brand{
+  font-size:3em;
+  color:white;
+  margin-left:-1.5%;
+  margin-right:3%;
+}
+.nav-item {
+  margin-right: 15%;
+  font-size:1.5em;
+}
+.nav-item a{
+  color:white;
+}
+a:hover{
+  color:gray;
 }
 
 .prev,
