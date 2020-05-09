@@ -1,48 +1,74 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
+  <head>
+    <title>Register</title>
 
-	<!-- boostrap css -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<!-- css -->
+    <!-- boostrap css -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- css -->
     <link rel="stylesheet" type="text/css" href="../CSS/login.css" />
     <link rel="stylesheet" type="text/css" href="../CSS/style.css" />
-	<!-- boostrap js -->
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	<!-- js -->
-	<script type="text/javascript" href="signup.js"></script>
-	<script>
-	function autotab(current,to){
-		if (current.getAttribute && 
-			current.value.length==current.getAttribute("maxlength")) {
-			to.focus() 
-		}
-	}
-	function confirmPass() {
-		var pass = document.getElementById("inputPassword").value
-		var confPass = document.getElementById("c_pass").value
-			if(pass != confPass) {
-				alert('Wrong confirm password !');
-		}
-	}
-
-	</script>
-</head>
-<body>
+    <!-- boostrap js -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <!-- js -->
+    <script type="text/javascript" href="signup.js"></script>
+    <script>
+      function autotab(current, to) {
+        if (
+          current.getAttribute &&
+          current.value.length == current.getAttribute("maxlength")
+        ) {
+          to.focus();
+        }
+      }
+      function confirmPass() {
+        var pass = document.getElementById("inputPassword").value;
+        var confPass = document.getElementById("c_pass").value;
+        if (pass != confPass) {
+          alert("Wrong confirm password !");
+        }
+      }
+    </script>
+  </head>
+  <body>
     <!--TITLE HEADER [Begin]-->
     <div class="headerTitle">
       <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="../HTML/index.html">BrokenCollege</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item ">
+            <li class="nav-item">
               <a href="postsBoard.html">Posts</a>
             </li>
             <li class="nav-item">
@@ -56,60 +82,104 @@
       </nav>
     </div>
     <!--TITLE HEADER [End]-->
-	<!-- content -->
-	<div class="container">
-		 <a href="../HTML/index.html" class="btn btn-secondary">Back</a>
-		<div class="card">
-			<div class="card-header">
-				<h2>Sign Up</h2>
-			</div>
-			<div class="card-body">
-				<form name="telephone" action="" method="post">
-					<div class="form-group row">
-						<label for="inputPassword" class="col-sm-5 col-form-label">Name<span class="text-danger">*</span></label>
-						<div class="col-sm-7">
-							<input class="form-control" placeholder="Enter your name"value=""/>
-						</div>
-					</div>
-					<div class="form-group row">
-						<label for="email" class="col-sm-5 col-form-label">Email ID<span class="text-danger">*</span></label>
-						<div class="col-sm-7">
-							<input type="email" class="form-control" id="email" placeholder="Enter your Email ID" value="" required>
-						</div>
-					</div>
-					<div class="form-group row">
-						<label for="inputPassword" class="col-sm-5 col-form-label">Set Password<span class="text-danger">*</span></label>
-						<div class="col-sm-7">
-							<input type="password" class="form-control" id="inputPassword" placeholder="Enter your password"name="your_pass" value=""/>
-						</div>
-					</div>
-					<div class="form-group row">
-						<label for="c_pass" class="col-sm-5 col-form-label">Confirm Password<span class="text-danger">*</span></label>
-						<div class="col-sm-7">
-							<input type="password" class="form-control" id="c_pass" placeholder="Confirm your password"name="your_c_pass" value="" onblur="confirmPass()"/>
-						</div>
-					</div>
-					<div class="form-group row">
-						<label for="number" class="col-sm-5 col-form-label">Leave Message</label>
-						<div class="col-sm-5">
-							<textarea rows="4" cols="25" maxlength="50" placeholder="Enter text here..."></textarea>
-						</div>
-					</div>
-					<button type="button" class="btn btn-primary">Submit</button>
-					<div class="mt-4">
-			            <div class="justify-content-center">
-			              Already have an account?
-			              <a href="login.html" class="ml-2">Login</a>
-			            </div>
-         			</div>
-				</form>
-			</div>
-		</div>
+    <!-- content -->
+    <div class="container">
+      <a href="../HTML/index.html" class="btn btn-secondary">Back</a>
+      <div class="card">
+        <div class="card-header">
+          <h2>Sign Up</h2>
+        </div>
+        <div class="card-body">
+          <form name="telephone" action="" method="post">
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-5 col-form-label"
+                >Name<span class="text-danger">*</span></label
+              >
+              <div class="col-sm-7">
+                <input
+                  class="form-control"
+                  placeholder="Enter your name"
+                  value=""
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="email" class="col-sm-5 col-form-label"
+                >E-mail<span class="text-danger">*</span></label
+              >
+              <div class="col-sm-7">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter your E-mail"
+                  value=""
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputPassword" class="col-sm-5 col-form-label"
+                >Password<span class="text-danger">*</span></label
+              >
+              <div class="col-sm-7">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="inputPassword"
+                  placeholder="Enter your password"
+                  name="your_pass"
+                  value=""
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="c_pass" class="col-sm-5 col-form-label"
+                >Confirm Password<span class="text-danger">*</span></label
+              >
+              <div class="col-sm-7">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="c_pass"
+                  placeholder="Confirm your password"
+                  name="your_c_pass"
+                  value=""
+                  onblur="confirmPass()"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="securityQuestion" class="col-sm-5">Security Question?<span class="text-danger">*</span></label>
+              <div class="col-sm-7">
+                <select name="secQuest" id="dropdown">
+                  <option value="0">Where was your mother born?</option>
+                  <option value="1">What was your first car?</option>
+                  <option value="2">What was your first pet?</option>
+                  <option value="3">What was your school name?</option>
+                  <option value="4">Where were you born?</option>
+                  <option value="5">What is your favourite color?</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="secQuestAnswer" class="col-sm-5">Answer<span class="text-danger">*</span></label>
+              <div class="col-sm-7">
+                <input type="text" class="form-control" id="security_question" placeholder="Answer here">
+              </div>
+            </div>
 
-	</div>
 
-</body>
-
-
-
+            <button type="button" class="btn btn-primary">Submit</button>
+            <div class="mt-4">
+              <div class="justify-content-center">
+                Already have an account?
+                <a href="login.html" class="ml-2">Login</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
