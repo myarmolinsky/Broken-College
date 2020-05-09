@@ -33,11 +33,15 @@ function loadPosts() {
       data[i].problem +
       '</span>            </div>          </div>          <hr />          <div class="row">            <div class="col-md-12 form-group">              <span id="images"><img src="' +
       data[i].image +
-      '"/> </span>            </div>          </div>          <div class="row">            <button              class="btn btn-primary"              onclick="upvote(' +
+      '"/> </span>            </div>          </div>          <div class="row">            <button              class="btn btn-primary"      style="background-color: ' +
+      (data[i].upvoted ? "green" : "#007bff") +
+      ' "      onclick="upvote(' +
       i +
       ')"              style="margin-left: 1%; margin-right: 1%;"            >              +' +
       data[i].upvotes +
-      '            </button>            <button class="btn btn-primary" onclick="downvote(' +
+      '            </button>            <button class="btn btn-primary" style="background-color: ' +
+      (data[i].downvoted ? "red" : "#007bff") +
+      ' "  onclick="downvote(' +
       i +
       ')">              -' +
       data[i].downvotes +
